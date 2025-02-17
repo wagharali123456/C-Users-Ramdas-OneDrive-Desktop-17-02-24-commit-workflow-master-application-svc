@@ -1,0 +1,138 @@
+[
+  {
+    "stageId": 1,
+    "name": "Quote Initiation",
+    "timeoutConfig": {
+      "timeoutEnabled": true,
+      "timeoutSeconds": 600,
+      "timeoutFallback": { "fallbackStageId": 1 }
+    }
+  },
+  {
+    "stageId": 2,
+    "name": "Quote Validation",
+    "timeoutConfig": {
+      "timeoutEnabled": true,
+      "timeoutSeconds": 600,
+      "timeoutFallback": { "fallbackStageId": 1}
+    }
+  },
+  {
+    "stageId": 3,
+    "name": "Quote Approval",
+    "timeoutConfig": {
+      "timeoutEnabled": true,
+      "timeoutSeconds": 600,
+      "timeoutFallback": { "fallbackStageId": 2 }
+    }
+  },
+  {
+    "stageId": 4,
+    "name": "Lead Creation",
+    "timeoutConfig": { "timeoutEnabled": false }
+  },
+  {
+    "stageId": 5,
+    "name": "Lead Validation",
+    "timeoutConfig": {
+      "timeoutEnabled": true,
+      "timeoutSeconds": 600,
+      "timeoutFallback": { "fallbackStageId": 4 }
+    }
+  },
+  {
+    "stageId": 6,
+    "name": "Lead Approval",
+    "timeoutConfig": { "timeoutEnabled": false }
+  },
+  {
+    "stageId": 7,
+    "name": "Proposal Submission",
+    "timeoutConfig": {
+      "timeoutEnabled": true,
+      "timeoutSeconds": 600,
+      "timeoutFallback": { "fallbackStageId": 6 }
+    }
+  },
+  {
+    "stageId": 8,
+    "name": "Proposal Validation",
+    "timeoutConfig": {
+      "timeoutEnabled": true,
+      "timeoutSeconds": 600,
+      "timeoutFallback": { "fallbackStageId": 7 }
+    }
+  },
+  {
+    "stageId": 9,
+    "name": "Proposal Approval",
+    "timeoutConfig": {
+      "timeoutEnabled": true,
+      "timeoutSeconds": 600,
+      "timeoutFallback": { "fallbackStageId": 8 }
+    }
+  },
+  {
+    "stageId": 10,
+    "name": "Payment Initiation",
+    "timeoutConfig": {
+      "timeoutEnabled": true,
+      "timeoutSeconds": 600,
+      "timeoutFallback": { "fallbackStageId": 9 }
+    }
+  },
+  {
+    "stageId": 11,
+    "name": "Payment Processing",
+    "timeoutConfig": {
+      "timeoutEnabled": true,
+      "timeoutSeconds": 600,
+      "timeoutFallback": { "fallbackStageId": 10 }
+    }
+  },
+  {
+    "stageId": 12,
+    "name": "Payment Confirmation",
+    "timeoutConfig": {
+      "timeoutEnabled": true,
+      "timeoutSeconds": 600,
+      "timeoutFallback": { "fallbackStageId": 11 }
+    }
+  },
+  {
+    "stageId": 13,
+    "name": "Feedback Collection",
+    "timeoutConfig": {
+      "timeoutEnabled": true,
+      "timeoutSeconds": 600,
+      "timeoutFallback": { "fallbackStageId": 12 }
+    }
+  },
+  {
+    "stageId": 14,
+    "name": "Feedback Analysis",
+    "timeoutConfig": {
+      "timeoutEnabled": true,
+      "timeoutSeconds": 600,
+      "timeoutFallback": { "fallbackStageId": 13 }
+    }
+  },
+  {
+    "stageId": 15,
+    "name": "Feedback Closure",
+    "timeoutConfig": {
+      "timeoutEnabled": true,
+      "timeoutSeconds": 300,
+      "timeoutFallback": { "fallbackStageId": 14 }
+    }
+  },
+    {
+    "stageId": 16,
+    "name": "Close Workflow",
+    "timeoutConfig": {
+      "timeoutEnabled": true,
+      "timeoutSeconds": 300,
+      "timeoutFallback": {}
+    }
+  }
+]

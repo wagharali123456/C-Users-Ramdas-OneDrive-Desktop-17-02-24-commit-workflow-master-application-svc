@@ -1,0 +1,64 @@
+[{
+  "_id": {
+    "$oid": "67b34bc1c16712330b01648c"
+  },
+  "workflowId": "POLICY_WORKFLOW",
+  "workflowName": "Policy Workflow",
+  "description": "Handles the purchase process for insurance policies.",
+  "saveStagePageData": true,
+  "createdAt": {
+    "$date": "2025-02-17T14:46:25.377Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-17T14:46:25.377Z"
+  },
+  "_class": "com.org.fms.mongo.model.Workflow"
+},
+{
+  "_id": {
+    "$oid": "67b34bc1c16712330b01648d"
+  },
+  "workflowId": "FLOW_2",
+  "workflowName": "Flow 2",
+  "description": "Handles additional insurance processes.",
+  "saveStagePageData": true,
+  "createdAt": {
+    "$date": "2025-02-17T14:46:25.377Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-17T14:46:25.377Z"
+  },
+  "_class": "com.org.fms.mongo.model.Workflow"
+},
+{
+  "_id": {
+    "$oid": "67b34bc1c16712330b01648e"
+  },
+  "workflowId": "FLOW_3",
+  "workflowName": "Flow 3",
+  "description": "Manages other insurance workflow activities.",
+  "saveStagePageData": true,
+  "createdAt": {
+    "$date": "2025-02-17T14:46:25.377Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-17T14:46:25.377Z"
+  },
+  "_class": "com.org.fms.mongo.model.Workflow"
+},
+{
+  "_id": {
+    "$oid": "67b34bc1c16712330b01648f"
+  },
+  "workflowId": "FLOW_4",
+  "workflowName": "Flow 4",
+  "description": "Completes insurance workflow finalization.",
+  "saveStagePageData": true,
+  "createdAt": {
+    "$date": "2025-02-17T14:46:25.377Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-17T14:46:25.377Z"
+  },
+  "_class": "com.org.fms.mongo.model.Workflow"
+}]

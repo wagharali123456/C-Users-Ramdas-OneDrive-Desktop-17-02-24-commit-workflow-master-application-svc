@@ -1,0 +1,10 @@
+[
+  {
+    "appCode": "INSURANCE_APP",
+    "appId": "INS_APP",
+    "name": "Insurance Application",
+    "description": "Handles insurance workflows",
+    "relatedApplications": ["BANKING_APP", "ECOMMERCE_APP"],
+    "connectedWorkflows": ["POLICY_WORKFLOW", "FLOW_2" , "FLOW_3", "FLOW_4"]
+  }
+]

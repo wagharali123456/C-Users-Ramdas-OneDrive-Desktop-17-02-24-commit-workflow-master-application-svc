@@ -1,0 +1,35 @@
+[{
+  "_id": {
+    "$oid": "67b34bc6c16712330b0164b3"
+  },
+  "transactionId": "TXN-2222",
+  "appId": "INS_APP",
+  "workflowId": "POLICY_WORKFLOW",
+  "currentStage": "15",
+  "status": "CLOSED",
+  "createdAt": {
+    "$date": "2025-02-17T14:46:30.851Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-17T14:46:30.851Z"
+  },
+  "metadata": {
+    "requestTimestamp": {
+      "$date": "2025-02-17T14:46:30.851Z"
+    },
+    "initiator": "SYSTEM",
+    "requestSource": "CLIENT"
+  },
+  "allowedActions": [
+    "VALIDATE_QUOTE",
+    "APPROVE_QUOTE",
+    "SKIP_VALIDATION",
+    "JUMP_TO_PROPOSAL",
+    "NEXT",
+    "JUMP"
+  ],
+  "notAllowedActions": [
+    "CANCEL"
+  ],
+  "_class": "com.org.fms.mongo.model.WorkflowTransaction"
+}]

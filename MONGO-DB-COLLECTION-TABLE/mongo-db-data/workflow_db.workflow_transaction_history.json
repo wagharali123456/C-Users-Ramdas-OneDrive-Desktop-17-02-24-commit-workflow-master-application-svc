@@ -1,0 +1,345 @@
+[{
+  "_id": {
+    "$oid": "67b34bc6c16712330b0164b4"
+  },
+  "transactionId": "TXN-2222",
+  "appId": "INS_APP",
+  "workflowId": "POLICY_WORKFLOW",
+  "workflowName": "Policy Workflow",
+  "toStage": "1",
+  "action": "START",
+  "status": "CLOSED",
+  "timestamp": {
+    "$date": "2025-02-17T14:46:30.874Z"
+  },
+  "metadata": {
+    "requestTimestamp": {
+      "$date": "2025-02-17T14:46:30.851Z"
+    },
+    "initiator": "SYSTEM",
+    "requestSource": "CLIENT"
+  },
+  "_class": "com.org.fms.mongo.model.WorkflowTransactionHistory"
+},
+{
+  "_id": {
+    "$oid": "67b34bd2c16712330b0164b6"
+  },
+  "transactionId": "TXN-2222",
+  "appId": "INS_APP",
+  "workflowId": "POLICY_WORKFLOW",
+  "workflowName": "POLICY_WORKFLOW",
+  "fromStage": "1",
+  "toStage": "2",
+  "action": "NEXT",
+  "status": "CLOSED",
+  "timestamp": {
+    "$date": "2025-02-17T14:46:42.862Z"
+  },
+  "metadata": {
+    "actor": "System",
+    "timestamp": {
+      "$date": "2025-02-17T14:46:42.862Z"
+    }
+  },
+  "_class": "com.org.fms.mongo.model.WorkflowTransactionHistory"
+},
+{
+  "_id": {
+    "$oid": "67b34bd4c16712330b0164b8"
+  },
+  "transactionId": "TXN-2222",
+  "appId": "INS_APP",
+  "workflowId": "POLICY_WORKFLOW",
+  "workflowName": "POLICY_WORKFLOW",
+  "fromStage": "2",
+  "toStage": "3",
+  "action": "NEXT",
+  "status": "CLOSED",
+  "timestamp": {
+    "$date": "2025-02-17T14:46:44.506Z"
+  },
+  "metadata": {
+    "actor": "System",
+    "timestamp": {
+      "$date": "2025-02-17T14:46:44.506Z"
+    }
+  },
+  "_class": "com.org.fms.mongo.model.WorkflowTransactionHistory"
+},
+{
+  "_id": {
+    "$oid": "67b34bd5c16712330b0164ba"
+  },
+  "transactionId": "TXN-2222",
+  "appId": "INS_APP",
+  "workflowId": "POLICY_WORKFLOW",
+  "workflowName": "POLICY_WORKFLOW",
+  "fromStage": "3",
+  "toStage": "4",
+  "action": "NEXT",
+  "status": "CLOSED",
+  "timestamp": {
+    "$date": "2025-02-17T14:46:45.599Z"
+  },
+  "metadata": {
+    "actor": "System",
+    "timestamp": {
+      "$date": "2025-02-17T14:46:45.599Z"
+    }
+  },
+  "_class": "com.org.fms.mongo.model.WorkflowTransactionHistory"
+},
+{
+  "_id": {
+    "$oid": "67b34bd6c16712330b0164bc"
+  },
+  "transactionId": "TXN-2222",
+  "appId": "INS_APP",
+  "workflowId": "POLICY_WORKFLOW",
+  "workflowName": "POLICY_WORKFLOW",
+  "fromStage": "4",
+  "toStage": "5",
+  "action": "NEXT",
+  "status": "CLOSED",
+  "timestamp": {
+    "$date": "2025-02-17T14:46:46.454Z"
+  },
+  "metadata": {
+    "actor": "System",
+    "timestamp": {
+      "$date": "2025-02-17T14:46:46.454Z"
+    }
+  },
+  "_class": "com.org.fms.mongo.model.WorkflowTransactionHistory"
+},
+{
+  "_id": {
+    "$oid": "67b34bd7c16712330b0164be"
+  },
+  "transactionId": "TXN-2222",
+  "appId": "INS_APP",
+  "workflowId": "POLICY_WORKFLOW",
+  "workflowName": "POLICY_WORKFLOW",
+  "fromStage": "5",
+  "toStage": "6",
+  "action": "NEXT",
+  "status": "CLOSED",
+  "timestamp": {
+    "$date": "2025-02-17T14:46:47.297Z"
+  },
+  "metadata": {
+    "actor": "System",
+    "timestamp": {
+      "$date": "2025-02-17T14:46:47.297Z"
+    }
+  },
+  "_class": "com.org.fms.mongo.model.WorkflowTransactionHistory"
+},
+{
+  "_id": {
+    "$oid": "67b34bd8c16712330b0164c0"
+  },
+  "transactionId": "TXN-2222",
+  "appId": "INS_APP",
+  "workflowId": "POLICY_WORKFLOW",
+  "workflowName": "POLICY_WORKFLOW",
+  "fromStage": "6",
+  "toStage": "7",
+  "action": "NEXT",
+  "status": "CLOSED",
+  "timestamp": {
+    "$date": "2025-02-17T14:46:48.124Z"
+  },
+  "metadata": {
+    "actor": "System",
+    "timestamp": {
+      "$date": "2025-02-17T14:46:48.124Z"
+    }
+  },
+  "_class": "com.org.fms.mongo.model.WorkflowTransactionHistory"
+},
+{
+  "_id": {
+    "$oid": "67b34bd9c16712330b0164c2"
+  },
+  "transactionId": "TXN-2222",
+  "appId": "INS_APP",
+  "workflowId": "POLICY_WORKFLOW",
+  "workflowName": "POLICY_WORKFLOW",
+  "fromStage": "7",
+  "toStage": "8",
+  "action": "NEXT",
+  "status": "CLOSED",
+  "timestamp": {
+    "$date": "2025-02-17T14:46:49.431Z"
+  },
+  "metadata": {
+    "actor": "System",
+    "timestamp": {
+      "$date": "2025-02-17T14:46:49.431Z"
+    }
+  },
+  "_class": "com.org.fms.mongo.model.WorkflowTransactionHistory"
+},
+{
+  "_id": {
+    "$oid": "67b34bdac16712330b0164c4"
+  },
+  "transactionId": "TXN-2222",
+  "appId": "INS_APP",
+  "workflowId": "POLICY_WORKFLOW",
+  "workflowName": "POLICY_WORKFLOW",
+  "fromStage": "8",
+  "toStage": "9",
+  "action": "NEXT",
+  "status": "CLOSED",
+  "timestamp": {
+    "$date": "2025-02-17T14:46:50.322Z"
+  },
+  "metadata": {
+    "actor": "System",
+    "timestamp": {
+      "$date": "2025-02-17T14:46:50.322Z"
+    }
+  },
+  "_class": "com.org.fms.mongo.model.WorkflowTransactionHistory"
+},
+{
+  "_id": {
+    "$oid": "67b34bdbc16712330b0164c6"
+  },
+  "transactionId": "TXN-2222",
+  "appId": "INS_APP",
+  "workflowId": "POLICY_WORKFLOW",
+  "workflowName": "POLICY_WORKFLOW",
+  "fromStage": "9",
+  "toStage": "10",
+  "action": "NEXT",
+  "status": "CLOSED",
+  "timestamp": {
+    "$date": "2025-02-17T14:46:51.119Z"
+  },
+  "metadata": {
+    "actor": "System",
+    "timestamp": {
+      "$date": "2025-02-17T14:46:51.119Z"
+    }
+  },
+  "_class": "com.org.fms.mongo.model.WorkflowTransactionHistory"
+},
+{
+  "_id": {
+    "$oid": "67b34bdbc16712330b0164c8"
+  },
+  "transactionId": "TXN-2222",
+  "appId": "INS_APP",
+  "workflowId": "POLICY_WORKFLOW",
+  "workflowName": "POLICY_WORKFLOW",
+  "fromStage": "10",
+  "toStage": "11",
+  "action": "NEXT",
+  "status": "CLOSED",
+  "timestamp": {
+    "$date": "2025-02-17T14:46:51.965Z"
+  },
+  "metadata": {
+    "actor": "System",
+    "timestamp": {
+      "$date": "2025-02-17T14:46:51.965Z"
+    }
+  },
+  "_class": "com.org.fms.mongo.model.WorkflowTransactionHistory"
+},
+{
+  "_id": {
+    "$oid": "67b34bdcc16712330b0164ca"
+  },
+  "transactionId": "TXN-2222",
+  "appId": "INS_APP",
+  "workflowId": "POLICY_WORKFLOW",
+  "workflowName": "POLICY_WORKFLOW",
+  "fromStage": "11",
+  "toStage": "12",
+  "action": "NEXT",
+  "status": "CLOSED",
+  "timestamp": {
+    "$date": "2025-02-17T14:46:52.806Z"
+  },
+  "metadata": {
+    "actor": "System",
+    "timestamp": {
+      "$date": "2025-02-17T14:46:52.806Z"
+    }
+  },
+  "_class": "com.org.fms.mongo.model.WorkflowTransactionHistory"
+},
+{
+  "_id": {
+    "$oid": "67b34bddc16712330b0164cc"
+  },
+  "transactionId": "TXN-2222",
+  "appId": "INS_APP",
+  "workflowId": "POLICY_WORKFLOW",
+  "workflowName": "POLICY_WORKFLOW",
+  "fromStage": "12",
+  "toStage": "13",
+  "action": "NEXT",
+  "status": "CLOSED",
+  "timestamp": {
+    "$date": "2025-02-17T14:46:53.604Z"
+  },
+  "metadata": {
+    "actor": "System",
+    "timestamp": {
+      "$date": "2025-02-17T14:46:53.604Z"
+    }
+  },
+  "_class": "com.org.fms.mongo.model.WorkflowTransactionHistory"
+},
+{
+  "_id": {
+    "$oid": "67b34bdec16712330b0164ce"
+  },
+  "transactionId": "TXN-2222",
+  "appId": "INS_APP",
+  "workflowId": "POLICY_WORKFLOW",
+  "workflowName": "POLICY_WORKFLOW",
+  "fromStage": "13",
+  "toStage": "14",
+  "action": "NEXT",
+  "status": "CLOSED",
+  "timestamp": {
+    "$date": "2025-02-17T14:46:54.446Z"
+  },
+  "metadata": {
+    "actor": "System",
+    "timestamp": {
+      "$date": "2025-02-17T14:46:54.446Z"
+    }
+  },
+  "_class": "com.org.fms.mongo.model.WorkflowTransactionHistory"
+},
+{
+  "_id": {
+    "$oid": "67b34bdfc16712330b0164d0"
+  },
+  "transactionId": "TXN-2222",
+  "appId": "INS_APP",
+  "workflowId": "POLICY_WORKFLOW",
+  "workflowName": "POLICY_WORKFLOW",
+  "fromStage": "14",
+  "toStage": "15",
+  "action": "NEXT",
+  "status": "SUCCESS",
+  "timestamp": {
+    "$date": "2025-02-17T14:46:55.275Z"
+  },
+  "metadata": {
+    "actor": "System",
+    "timestamp": {
+      "$date": "2025-02-17T14:46:55.275Z"
+    }
+  },
+  "_class": "com.org.fms.mongo.model.WorkflowTransactionHistory"
+}]

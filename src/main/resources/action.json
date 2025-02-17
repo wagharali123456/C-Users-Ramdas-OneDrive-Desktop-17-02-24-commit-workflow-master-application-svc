@@ -1,0 +1,234 @@
+[
+    {
+        "id": "GA1",
+        "actionCode": "SYSTEM_TIMEOUT",
+        "name": "System Timeout",
+        "category": "SYSTEM",
+        "description": "Automatically moves to the next stage if timeout occurs",
+        "relatedWorkflows": ["ALL_WORKFLOWS"],
+        "requiresApproval": false,
+        "isAutoExecutable": true
+    },
+    {
+        "id": "GA2",
+        "actionCode": "SYSTEM_RETRY",
+        "name": "System Retry",
+        "category": "SYSTEM",
+        "description": "Retries failed transitions based on conditions",
+        "relatedWorkflows": ["ALL_WORKFLOWS"],
+        "requiresApproval": false,
+        "isAutoExecutable": true
+    },
+    {
+        "id": "GA3",
+        "actionCode": "SYSTEM_ROLLBACK",
+        "name": "System Rollback",
+        "category": "SYSTEM",
+        "description": "Rolls back to the previous stage in case of errors",
+        "relatedWorkflows": ["Policy Workflow", "Loan Processing"],
+        "requiresApproval": false,
+        "isAutoExecutable": false
+    },
+    {
+        "id": "GA4",
+        "actionCode": "VALIDATE_QUOTE",
+        "name": "VALIDATE_QUOTE",
+        "category": "APPLICATION",
+        "description": "Approve a verified quote",
+        "relatedWorkflows": ["Policy Workflow", "Underwriting"],
+        "requiresApproval": true,
+        "isAutoExecutable": false
+    },
+    {
+        "id": "GA5",
+        "actionCode": "APPROVE_QUOTE",
+        "name": "APPROVE_QUOTE",
+        "category": "APPLICATION",
+        "description": "Verify user payment information",
+        "relatedWorkflows": ["Order Management", "Banking Transactions"],
+        "requiresApproval": false,
+        "isAutoExecutable": true
+    },
+	    {
+        "id": "GA6",
+        "actionCode": "PROCEED_TO_LEAD",
+        "name": "PROCEED_TO_LEAD",
+        "category": "APPLICATION",
+        "description": "Approve a verified quote",
+        "relatedWorkflows": ["Policy Workflow", "Underwriting"],
+        "requiresApproval": true,
+        "isAutoExecutable": false
+    },
+    {
+        "id": "GA7",
+        "actionCode": "VALIDATE_LEAD",
+        "name": "VALIDATE_LEAD",
+        "category": "APPLICATION",
+        "description": "Verify user payment information",
+        "relatedWorkflows": ["Order Management", "Banking Transactions"],
+        "requiresApproval": false,
+        "isAutoExecutable": true
+    },
+	{
+        "id": "GA8",
+        "actionCode": "APPROVE_LEAD",
+        "name": "APPROVE_LEAD",
+        "category": "APPLICATION",
+        "description": "Verify user payment information",
+        "relatedWorkflows": ["Order Management", "Banking Transactions"],
+        "requiresApproval": false,
+        "isAutoExecutable": true
+    },
+	{
+        "id": "GA9",
+        "actionCode": "SUBMIT_PROPOSAL",
+        "name": "SUBMIT_PROPOSAL",
+        "category": "APPLICATION",
+        "description": "Verify user payment information",
+        "relatedWorkflows": ["Order Management", "Banking Transactions"],
+        "requiresApproval": false,
+        "isAutoExecutable": true
+    },
+	{
+        "id": "GA10",
+        "actionCode": "APPROVE_PROPOSAL",
+        "name": "APPROVE_PROPOSAL",
+        "category": "APPLICATION",
+        "description": "Verify user payment information",
+        "relatedWorkflows": ["Order Management", "Banking Transactions"],
+        "requiresApproval": false,
+        "isAutoExecutable": true
+    },
+	{
+        "id": "GA11",
+        "actionCode": "APPROVE_PROPOSAL",
+        "name": "APPROVE_PROPOSAL",
+        "category": "APPLICATION",
+        "description": "Verify user payment information",
+        "relatedWorkflows": ["Order Management", "Banking Transactions"],
+        "requiresApproval": false,
+        "isAutoExecutable": true
+    },
+    {
+        "id": "GA12",
+        "actionCode": "INITIATE_PAYMENT",
+        "name": "INITIATE_PAYMENT",
+        "category": "APPLICATION",
+        "description": "Verify user payment information",
+        "relatedWorkflows": ["Order Management", "Banking Transactions"],
+        "requiresApproval": false,
+        "isAutoExecutable": true
+    },
+	    {
+        "id": "GA13",
+        "actionCode": "CONFIRM_PAYMENT",
+        "name": "CONFIRM_PAYMENT",
+        "category": "APPLICATION",
+        "description": "Verify user payment information",
+        "relatedWorkflows": ["Order Management", "Banking Transactions"],
+        "requiresApproval": false,
+        "isAutoExecutable": true
+    },
+		    {
+        "id": "GA14",
+        "actionCode": "CONFIRM_PAYMENT",
+        "name": "CONFIRM_PAYMENT",
+        "category": "APPLICATION",
+        "description": "Verify user payment information",
+        "relatedWorkflows": ["Order Management", "Banking Transactions"],
+        "requiresApproval": false,
+        "isAutoExecutable": true
+    },
+    {
+        "id": "GA15",
+        "actionCode": "COLLECT_FEEDBACK",
+        "name": "COLLECT_FEEDBACK",
+        "category": "APPLICATION",
+        "description": "Verify user payment information",
+        "relatedWorkflows": ["Order Management", "Banking Transactions"],
+        "requiresApproval": false,
+        "isAutoExecutable": true
+    },
+	{
+        "id": "GA16",
+        "actionCode": "ANALYZE_FEEDBACK",
+        "name": "ANALYZE_FEEDBACK",
+        "category": "APPLICATION",
+        "description": "Verify user payment information",
+        "relatedWorkflows": ["Order Management", "Banking Transactions"],
+        "requiresApproval": false,
+        "isAutoExecutable": true
+    },
+		{
+        "id": "GA17",
+        "actionCode": "CLOSE_FEEDBACK",
+        "name": "CLOSE FEEDBACK",
+        "category": "APPLICATION",
+        "description": "Verify user payment information",
+        "relatedWorkflows": ["Order Management", "Banking Transactions"],
+        "requiresApproval": false,
+        "isAutoExecutable": true
+    },
+		{
+        "id": "GA18",
+        "actionCode": "CLOSE_WORKFLOW",
+        "name": "CLOSE WORKFLOW",
+        "category": "APPLICATION",
+        "description": "Verify user payment information",
+        "relatedWorkflows": ["Order Management", "Banking Transactions"],
+        "requiresApproval": false,
+        "isAutoExecutable": true
+    },
+    {
+        "id": "GA19",
+        "actionCode": "NEXT",
+        "name": "NEXT",
+        "category": "APPLICATION",
+        "description": "Verify user payment information",
+        "relatedWorkflows": ["Order Management", "Banking Transactions"],
+        "requiresApproval": false,
+        "isAutoExecutable": true
+    },
+    {
+        "id": "GA20",
+        "actionCode": "PREVIOUS",
+        "name": "PREVIOUS",
+        "category": "APPLICATION",
+        "description": "Verify user payment information",
+        "relatedWorkflows": ["Order Management", "Banking Transactions"],
+        "requiresApproval": false,
+        "isAutoExecutable": true
+    },
+    {
+        "id": "GA21",
+        "actionCode": "ROLLBACK",
+        "name": "ROLLBACK",
+        "category": "APPLICATION",
+        "description": "Verify user payment information",
+        "relatedWorkflows": ["Order Management", "Banking Transactions"],
+        "requiresApproval": false,
+        "isAutoExecutable": true
+    },
+        {
+        "id": "GA22",
+        "actionCode": "TIMEOUT",
+        "name": "TIMEOUT",
+        "category": "APPLICATION",
+        "description": "Verify user payment information",
+        "relatedWorkflows": ["Order Management", "Banking Transactions"],
+        "requiresApproval": false,
+        "isAutoExecutable": true
+    },
+   {
+        "id": "GA22",
+        "actionCode": "JUMP",
+        "name": "JUMP",
+        "category": "APPLICATION",
+        "description": "Verify user payment information",
+        "relatedWorkflows": ["Order Management", "Banking Transactions"],
+        "requiresApproval": false,
+        "isAutoExecutable": true
+    }
+    
+    
+]

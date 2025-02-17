@@ -1,0 +1,328 @@
+[{
+  "_id": {
+    "$oid": "67b34bc1c16712330b016490"
+  },
+  "stageId": 1,
+  "name": "Quote Initiation",
+  "timeoutConfig": {
+    "timeoutEnabled": true,
+    "timeoutSeconds": 600,
+    "timeoutFallback": {
+      "fallbackStageId": 1
+    }
+  },
+  "createdAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "_class": "com.org.fms.mongo.model.Stage"
+},
+{
+  "_id": {
+    "$oid": "67b34bc1c16712330b016491"
+  },
+  "stageId": 2,
+  "name": "Quote Validation",
+  "timeoutConfig": {
+    "timeoutEnabled": true,
+    "timeoutSeconds": 600,
+    "timeoutFallback": {
+      "fallbackStageId": 1
+    }
+  },
+  "createdAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "_class": "com.org.fms.mongo.model.Stage"
+},
+{
+  "_id": {
+    "$oid": "67b34bc1c16712330b016492"
+  },
+  "stageId": 3,
+  "name": "Quote Approval",
+  "timeoutConfig": {
+    "timeoutEnabled": true,
+    "timeoutSeconds": 600,
+    "timeoutFallback": {
+      "fallbackStageId": 2
+    }
+  },
+  "createdAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "_class": "com.org.fms.mongo.model.Stage"
+},
+{
+  "_id": {
+    "$oid": "67b34bc1c16712330b016493"
+  },
+  "stageId": 4,
+  "name": "Lead Creation",
+  "timeoutConfig": {
+    "timeoutEnabled": false,
+    "timeoutSeconds": 0
+  },
+  "createdAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "_class": "com.org.fms.mongo.model.Stage"
+},
+{
+  "_id": {
+    "$oid": "67b34bc1c16712330b016494"
+  },
+  "stageId": 5,
+  "name": "Lead Validation",
+  "timeoutConfig": {
+    "timeoutEnabled": true,
+    "timeoutSeconds": 600,
+    "timeoutFallback": {
+      "fallbackStageId": 4
+    }
+  },
+  "createdAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "_class": "com.org.fms.mongo.model.Stage"
+},
+{
+  "_id": {
+    "$oid": "67b34bc1c16712330b016495"
+  },
+  "stageId": 6,
+  "name": "Lead Approval",
+  "timeoutConfig": {
+    "timeoutEnabled": false,
+    "timeoutSeconds": 0
+  },
+  "createdAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "_class": "com.org.fms.mongo.model.Stage"
+},
+{
+  "_id": {
+    "$oid": "67b34bc1c16712330b016496"
+  },
+  "stageId": 7,
+  "name": "Proposal Submission",
+  "timeoutConfig": {
+    "timeoutEnabled": true,
+    "timeoutSeconds": 600,
+    "timeoutFallback": {
+      "fallbackStageId": 6
+    }
+  },
+  "createdAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "_class": "com.org.fms.mongo.model.Stage"
+},
+{
+  "_id": {
+    "$oid": "67b34bc1c16712330b016497"
+  },
+  "stageId": 8,
+  "name": "Proposal Validation",
+  "timeoutConfig": {
+    "timeoutEnabled": true,
+    "timeoutSeconds": 600,
+    "timeoutFallback": {
+      "fallbackStageId": 7
+    }
+  },
+  "createdAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "_class": "com.org.fms.mongo.model.Stage"
+},
+{
+  "_id": {
+    "$oid": "67b34bc1c16712330b016498"
+  },
+  "stageId": 9,
+  "name": "Proposal Approval",
+  "timeoutConfig": {
+    "timeoutEnabled": true,
+    "timeoutSeconds": 600,
+    "timeoutFallback": {
+      "fallbackStageId": 8
+    }
+  },
+  "createdAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "_class": "com.org.fms.mongo.model.Stage"
+},
+{
+  "_id": {
+    "$oid": "67b34bc1c16712330b016499"
+  },
+  "stageId": 10,
+  "name": "Payment Initiation",
+  "timeoutConfig": {
+    "timeoutEnabled": true,
+    "timeoutSeconds": 600,
+    "timeoutFallback": {
+      "fallbackStageId": 9
+    }
+  },
+  "createdAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "_class": "com.org.fms.mongo.model.Stage"
+},
+{
+  "_id": {
+    "$oid": "67b34bc1c16712330b01649a"
+  },
+  "stageId": 11,
+  "name": "Payment Processing",
+  "timeoutConfig": {
+    "timeoutEnabled": true,
+    "timeoutSeconds": 600,
+    "timeoutFallback": {
+      "fallbackStageId": 10
+    }
+  },
+  "createdAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "_class": "com.org.fms.mongo.model.Stage"
+},
+{
+  "_id": {
+    "$oid": "67b34bc1c16712330b01649b"
+  },
+  "stageId": 12,
+  "name": "Payment Confirmation",
+  "timeoutConfig": {
+    "timeoutEnabled": true,
+    "timeoutSeconds": 600,
+    "timeoutFallback": {
+      "fallbackStageId": 11
+    }
+  },
+  "createdAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "_class": "com.org.fms.mongo.model.Stage"
+},
+{
+  "_id": {
+    "$oid": "67b34bc1c16712330b01649c"
+  },
+  "stageId": 13,
+  "name": "Feedback Collection",
+  "timeoutConfig": {
+    "timeoutEnabled": true,
+    "timeoutSeconds": 600,
+    "timeoutFallback": {
+      "fallbackStageId": 12
+    }
+  },
+  "createdAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "_class": "com.org.fms.mongo.model.Stage"
+},
+{
+  "_id": {
+    "$oid": "67b34bc1c16712330b01649d"
+  },
+  "stageId": 14,
+  "name": "Feedback Analysis",
+  "timeoutConfig": {
+    "timeoutEnabled": true,
+    "timeoutSeconds": 600,
+    "timeoutFallback": {
+      "fallbackStageId": 13
+    }
+  },
+  "createdAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "_class": "com.org.fms.mongo.model.Stage"
+},
+{
+  "_id": {
+    "$oid": "67b34bc1c16712330b01649e"
+  },
+  "stageId": 15,
+  "name": "Feedback Closure",
+  "timeoutConfig": {
+    "timeoutEnabled": true,
+    "timeoutSeconds": 300,
+    "timeoutFallback": {
+      "fallbackStageId": 14
+    }
+  },
+  "createdAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "_class": "com.org.fms.mongo.model.Stage"
+},
+{
+  "_id": {
+    "$oid": "67b34bc1c16712330b01649f"
+  },
+  "stageId": 16,
+  "name": "Close Workflow",
+  "timeoutConfig": {
+    "timeoutEnabled": true,
+    "timeoutSeconds": 300,
+    "timeoutFallback": {}
+  },
+  "createdAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-17T14:46:25.426Z"
+  },
+  "_class": "com.org.fms.mongo.model.Stage"
+}]

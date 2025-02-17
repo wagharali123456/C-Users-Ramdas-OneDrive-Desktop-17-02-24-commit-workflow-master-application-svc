@@ -1,0 +1,11 @@
+package snippet;
+
+public class Snippet {
+	{
+	  "workflowId": 1,
+	  "fromStateId": 2,
+	  "toStateId": 3
+	}
+	
+}
+

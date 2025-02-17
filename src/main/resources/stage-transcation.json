@@ -1,0 +1,344 @@
+[
+  {
+    "appId":"INS_APP",
+    "workflowId":"POLICY_WORKFLOW",
+    "transactionId": "TXN-101",
+    "stageId": 1,
+    "stageName": "Quote Initiation",
+    "sequenceOrder": 1,
+    "nextStages": [
+      { "action": "VALIDATE_QUOTE", "targetStageIds": [2] },
+      { "action": "APPROVE_QUOTE", "targetStageIds": [3] },
+      { "action": "SKIP_VALIDATION", "targetStageIds": [5] },
+      { "action": "NEXT", "targetStageIds": [2, 3, 5] },
+      { "action": "JUMP_TO_PROPOSAL", "targetStageIds": [6] }
+    ],
+    "previousStages": [],
+    "rollbackStages": [],
+    "jumpStages": [
+      { "action": "JUMP", "targetStageIds": [8] }
+    ],
+    "skipStages": [],
+    "allowedActions": ["VALIDATE_QUOTE", "APPROVE_QUOTE", "SKIP_VALIDATION", "JUMP_TO_PROPOSAL", "NEXT", "JUMP"],
+    "notAllowedActions": ["CANCEL"]
+  },
+  {
+    "appId":"INS_APP",
+    "workflowId":"POLICY_WORKFLOW",
+    "transactionId": "TXN-102",
+    "stageId": 2,
+    "stageName": "Quote Validation",
+    "sequenceOrder": 2,
+    "nextStages": [
+      { "action": "APPROVE_QUOTE", "targetStageIds": [3] },
+      { "action": "DIRECT_TO_LEAD", "targetStageIds": [4] },
+      { "action": "NEXT", "targetStageIds": [3, 4] }
+    ],
+    "previousStages": [
+      { "action": "PREVIOUS", "targetStageIds": [1] }
+    ],
+    "rollbackStages": [
+      { "action": "ROLLBACK", "targetStageIds": [1] }
+    ],
+    "jumpStages": [
+      { "action": "JUMP_TO_PROPOSAL", "targetStageIds": [7] }
+    ],
+    "skipStages": [],
+    "allowedActions": ["APPROVE_QUOTE", "ROLLBACK", "DIRECT_TO_LEAD", "NEXT", "PREVIOUS", "JUMP_TO_PROPOSAL", "JUMP"],
+    "notAllowedActions": ["REJECT_QUOTE"]
+  },
+  {
+    "appId":"INS_APP",
+    "workflowId":"POLICY_WORKFLOW",
+    "transactionId": "TXN-103",
+    "stageId": 3,
+    "stageName": "Quote Approval",
+    "sequenceOrder": 3,
+    "nextStages": [
+      { "action": "PROCEED_TO_LEAD", "targetStageIds": [4] },
+      { "action": "JUMP_TO_PROPOSAL", "targetStageIds": [6] },
+      { "action": "NEXT", "targetStageIds": [4, 6] }
+    ],
+    "previousStages": [
+      { "action": "PREVIOUS", "targetStageIds": [2] }
+    ],
+    "rollbackStages": [
+      { "action": "ROLLBACK", "targetStageIds": [2] }
+    ],
+    "jumpStages": [
+      { "action": "JUMP", "targetStageIds": [10] }
+    ],
+    "skipStages": [],
+    "allowedActions": ["JUMP_TO_PROPOSAL", "PROCEED_TO_LEAD", "NEXT", "PREVIOUS", "JUMP", "ROLLBACK"],
+    "notAllowedActions": ["REJECT_QUOTE"]
+  },
+  {
+    "appId":"INS_APP",
+    "workflowId":"POLICY_WORKFLOW",
+    "transactionId": "TXN-104",
+    "stageId": 4,
+    "stageName": "Lead Creation",
+    "sequenceOrder": 4,
+    "nextStages": [
+      { "action": "VALIDATE_LEAD", "targetStageIds": [5] },
+      { "action": "NEXT", "targetStageIds": [5] }
+    ],
+    "previousStages": [
+      { "action": "PREVIOUS", "targetStageIds": [3] }
+    ],
+    "rollbackStages": [
+      { "action": "ROLLBACK", "targetStageIds": [3] }
+    ],
+    "jumpStages": [],
+    "skipStages": [
+      { "action": "SKIP", "targetStageIds": [7] }
+    ],
+    "allowedActions": ["VALIDATE_LEAD", "NEXT", "PREVIOUS"],
+    "notAllowedActions": ["CANCEL"]
+  },
+  {
+    "appId":"INS_APP",
+    "workflowId":"POLICY_WORKFLOW",
+    "transactionId": "TXN-105",
+    "stageId": 5,
+    "stageName": "Lead Validation",
+    "sequenceOrder": 5,
+    "nextStages": [
+      { "action": "APPROVE_LEAD", "targetStageIds": [6] },
+      { "action": "NEXT", "targetStageIds": [6] }
+    ],
+    "previousStages": [
+      { "action": "PREVIOUS", "targetStageIds": [4] }
+    ],
+    "rollbackStages": [
+      { "action": "ROLLBACK", "targetStageIds": [4] }
+    ],
+    "jumpStages": [],
+    "skipStages": [
+      { "action": "SKIP", "targetStageIds": [8] }
+    ],
+    "allowedActions": ["APPROVE_LEAD", "ROLLBACK", "NEXT", "PREVIOUS"],
+    "notAllowedActions": []
+  },
+  {
+    "appId":"INS_APP",
+    "workflowId":"POLICY_WORKFLOW",
+    "transactionId": "TXN-106",
+    "stageId": 6,
+    "stageName": "Proposal Submission",
+    "sequenceOrder": 6,
+    "nextStages": [
+      { "action": "SUBMIT_PROPOSAL", "targetStageIds": [7] },
+      { "action": "NEXT", "targetStageIds": [7] }
+    ],
+    "previousStages": [
+      { "action": "PREVIOUS", "targetStageIds": [5, 4, 1] }
+    ],
+    "rollbackStages": [
+      { "action": "ROLLBACK", "targetStageIds": [4] }
+    ],
+    "jumpStages": [],
+    "skipStages": [],
+    "allowedActions": ["SUBMIT_PROPOSAL", "NEXT", "PREVIOUS"],
+    "notAllowedActions": []
+  },
+  {
+    "appId":"INS_APP",
+    "workflowId":"POLICY_WORKFLOW",
+    "transactionId": "TXN-107",
+    "stageId": 7,
+    "stageName": "Proposal Validation",
+    "sequenceOrder": 7,
+    "nextStages": [
+      { "action": "VALIDATE_PROPOSAL", "targetStageIds": [8] },
+      { "action": "NEXT", "targetStageIds": [8] }
+    ],
+    "previousStages": [
+      { "action": "PREVIOUS", "targetStageIds": [6] }
+    ],
+    "rollbackStages": [
+      { "action": "ROLLBACK", "targetStageIds": [6] }
+    ],
+    "jumpStages": [],
+    "skipStages": [],
+    "allowedActions": ["VALIDATE_PROPOSAL", "NEXT", "PREVIOUS"],
+    "notAllowedActions": []
+  },
+  {
+    "appId":"INS_APP",
+    "workflowId":"POLICY_WORKFLOW",
+    "transactionId": "TXN-108",
+    "stageId": 8,
+    "stageName": "Proposal Approval",
+    "sequenceOrder": 8,
+    "nextStages": [
+      { "action": "APPROVE_PROPOSAL", "targetStageIds": [9] },
+      { "action": "NEXT", "targetStageIds": [9] }
+    ],
+    "previousStages": [
+      { "action": "PREVIOUS", "targetStageIds": [7] }
+    ],
+    "rollbackStages": [
+      { "action": "ROLLBACK", "targetStageIds": [7] }
+    ],
+    "jumpStages": [],
+    "skipStages": [],
+    "allowedActions": ["APPROVE_PROPOSAL", "NEXT", "PREVIOUS"],
+    "notAllowedActions": []
+  },
+  {
+    "appId":"INS_APP",
+    "workflowId":"POLICY_WORKFLOW",
+    "transactionId": "TXN-109",
+    "stageId": 9,
+    "stageName": "Payment Initiation",
+    "sequenceOrder": 9,
+    "nextStages": [
+      { "action": "INITIATE_PAYMENT", "targetStageIds": [10] },
+      { "action": "NEXT", "targetStageIds": [10] }
+    ],
+    "previousStages": [
+      { "action": "PREVIOUS", "targetStageIds": [9] }
+    ],
+    "rollbackStages": [
+      { "action": "ROLLBACK", "targetStageIds": [9] }
+    ],
+    "jumpStages": [],
+    "skipStages": [],
+    "allowedActions": ["INITIATE_PAYMENT", "NEXT", "PREVIOUS"],
+    "notAllowedActions": []
+  },
+  {
+    "appId":"INS_APP",
+    "workflowId":"POLICY_WORKFLOW",
+    "transactionId": "TXN-110",
+    "stageId": 10,
+    "stageName": "Payment Processing",
+    "sequenceOrder": 10,
+    "nextStages": [
+      { "action": "PROCESS_PAYMENT", "targetStageIds": [11] },
+      { "action": "NEXT", "targetStageIds": [11] }
+    ],
+    "previousStages": [
+      { "action": "PREVIOUS", "targetStageIds": [10] }
+    ],
+    "rollbackStages": [
+      { "action": "ROLLBACK", "targetStageIds": [10] }
+    ],
+    "jumpStages": [],
+    "skipStages": [],
+    "allowedActions": ["PROCESS_PAYMENT", "NEXT", "PREVIOUS"],
+    "notAllowedActions": []
+  },
+  {
+  	"appId":"INS_APP",
+    "workflowId":"POLICY_WORKFLOW",
+    "transactionId": "TXN-111",
+    "stageId": 11,
+    "stageName": "Payment Confirmation",
+    "sequenceOrder": 11,
+    "nextStages": [
+      { "action": "CONFIRM_PAYMENT", "targetStageIds": [12] },
+      { "action": "NEXT", "targetStageIds": [12] }
+    ],
+    "previousStages": [
+      { "action": "PREVIOUS", "targetStageIds": [11] }
+    ],
+    "rollbackStages": [
+      { "action": "ROLLBACK", "targetStageIds": [11] }
+    ],
+    "jumpStages": [],
+    "skipStages": [],
+    "allowedActions": ["CONFIRM_PAYMENT", "NEXT", "PREVIOUS"],
+    "notAllowedActions": []
+  },
+  {
+    "appId":"INS_APP",
+    "workflowId":"POLICY_WORKFLOW",
+    "transactionId": "TXN-112",
+    "stageId": 12,
+    "stageName": "Feedback Collection",
+    "sequenceOrder": 12,
+    "nextStages": [
+      { "action": "COLLECT_FEEDBACK", "targetStageIds": [13] },
+      { "action": "NEXT", "targetStageIds": [13] }
+    ],
+    "previousStages": [
+      { "action": "PREVIOUS", "targetStageIds": [12] }
+    ],
+    "rollbackStages": [
+      { "action": "ROLLBACK", "targetStageIds": [12] }
+    ],
+    "jumpStages": [],
+    "skipStages": [],
+    "allowedActions": ["COLLECT_FEEDBACK", "NEXT", "PREVIOUS"],
+    "notAllowedActions": []
+  },
+ {
+    "appId":"INS_APP",
+    "workflowId":"POLICY_WORKFLOW",
+    "transactionId": "TXN-113",
+    "stageId": 13,
+    "stageName": "Feedback Analysis",
+    "sequenceOrder": 13,
+    "nextStages": [
+      { "action": "ANALYZE_FEEDBACK", "targetStageIds": [14] },
+      { "action": "NEXT", "targetStageIds": [14] }
+    ],
+    "previousStages": [
+      { "action": "PREVIOUS", "targetStageIds": [13] }
+    ],
+    "rollbackStages": [
+      { "action": "ROLLBACK", "targetStageIds": [13] }
+    ],
+    "jumpStages": [],
+    "skipStages": [],
+    "allowedActions": ["ANALYZE_FEEDBACK", "NEXT", "PREVIOUS"],
+    "notAllowedActions": []
+  },
+ {
+    
+    "appId":"INS_APP",
+    "workflowId":"POLICY_WORKFLOW",
+    "transactionId": "TXN-114",
+    "stageId": 14,
+    "stageName": "Feedback Closure",
+    "sequenceOrder": 14,
+    "nextStages": [
+      {"action": "PREVIOUS", "targetStageIds": [15]},
+      {"action": "NEXT", "targetStageIds": [15]}
+    ],
+    "previousStages": [
+      { "action": "PREVIOUS", "targetStageIds": [14] }
+    ],
+    "rollbackStages": [
+      { "action": "ROLLBACK", "targetStageIds": [14] }
+    ],
+    "jumpStages": [],
+    "skipStages": [],
+    "allowedActions": ["CLOSE_FEEDBACK", "NEXT", "PREVIOUS"],
+    "notAllowedActions": []
+  },
+  {  
+    "appId":"INS_APP",
+    "workflowId":"POLICY_WORKFLOW",
+    "transactionId": "TXN-115",
+    "stageId": 15,
+    "stageName": "Close Workflow",
+    "sequenceOrder": 15,
+    "nextStages": [
+      {},
+      {}
+    ],
+    "previousStages": [
+      { }
+    ],
+    "rollbackStages": [
+      { }
+    ],
+    "jumpStages": [],
+    "skipStages": [],
+    "allowedActions": ["CLOSE_WORKFLOW"],
+    "notAllowedActions": []
+  }
+]
