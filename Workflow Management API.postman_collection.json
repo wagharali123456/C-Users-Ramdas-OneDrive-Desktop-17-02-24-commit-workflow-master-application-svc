@@ -18,7 +18,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{ \"transactionId\": \"TXN-1234576\", \"workflowName\": \"Policy Workflow\" }"
+					"raw": "{ \"transactionId\": \"TXN-2222\", \"workflowName\": \"Policy Workflow\" }"
 				},
 				"url": {
 					"raw": "http://localhost:8080/api/workflows/start",
@@ -37,6 +37,41 @@
 			"response": []
 		},
 		{
+			"name": "Close Workflow",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"transactionId\": \"TXN-2222\", \"workflowId\": \"POLICY_WORKFLOW\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/workflows/close",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"workflows",
+						"close"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Process Stage Transition",
 			"request": {
 				"method": "POST",
@@ -48,7 +83,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{ \"transactionId\": \"TXN-2222\", \"action\": \"VALIDATE_QUOTE\" }",
+					"raw": "{ \"transactionId\": \"TXN-2222\", \"action\": \"NEXT\" }",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -87,6 +122,144 @@
 						"api",
 						"workflow-history",
 						"TXN-12345"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Workflows with Application and Stage Details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/workflows/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"workflows",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Workflow with Application",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/workflows/INS_APP",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"workflows",
+						"INS_APP"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Workflow with Application and Specific Workflow",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/workflows/INS_APP/POLICY_WORKFLOW",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"workflows",
+						"INS_APP",
+						"POLICY_WORKFLOW"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Workflow current stage",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/workflows/current-stage/TXN-2222/POLICY_WORKFLOW",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"workflows",
+						"current-stage",
+						"TXN-2222",
+						"POLICY_WORKFLOW"
 					]
 				}
 			},
